@@ -1,2 +1,2 @@
 # Tree-Data-Structures
-Tree Data Structure assignments for Operating Systems
+Binary and N-ary Tree Data Structure an assignment for Operating Systems
