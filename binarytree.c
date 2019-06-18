@@ -1,14 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-struct Node
-{
-    #define Node struct Node
-    char *name;
-    Node *left;
-    Node *right;
-};
+#include "binarytree.h"
 
 Node *ROOT = NULL;
 char *TREENAME = "ROOT";
@@ -17,7 +10,7 @@ char *TREENAME = "ROOT";
 Node *createNode(char *name)
 {
     Node *node = malloc(sizeof(Node));
-    node->name = name;
+    strcpy(node->name, name);
     node->left = NULL;
     node->right = NULL;
     return node;
